@@ -81,7 +81,7 @@
 	.webpage_nav_flex>p{
 	
     margin: 0;      /* Removes browser default spacing */
-    line-height: 1.2; /* slightly better readability than 1 */
+    line-height: 1; /* slightly better readability than 1 */
 		
 	}
 	
@@ -94,9 +94,9 @@
 	}
 	
 	#forward_angle, .fa-angle-right{
-		font-size : 2.5rem;
+		font-size : 1.5rem;
     margin: 0;      /* Removes browser default spacing */
-    line-height: 1.2; /* slightly better readability than 1 */		
+    line-height: 1; /* slightly better readability than 1 */		
 		/* flex-shrink : 0; */
 	}
 	
