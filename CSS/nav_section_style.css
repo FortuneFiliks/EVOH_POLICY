@@ -23,13 +23,13 @@
 	
 	.brand_icon_img{
 		order : 0;
-		margin-left : -15PX;
+		
 	}
 
     .brand_logo{
 		width : 150px;
 		height : 60px;
-		
+		margin-left : -15PX;
 	}
 	
 
