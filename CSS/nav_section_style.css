@@ -23,6 +23,7 @@
 	
 	.brand_icon_img{
 		order : 0;
+		padding-left : -25PX;
 	}
 
     .brand_logo{
