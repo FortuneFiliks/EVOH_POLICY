@@ -1,0 +1,342 @@
+@media(MIN-WIDTH : 1025PX){
+/*****************************************START************************************/
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+        
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+    }
+	
+/******************************FIRST SECTION******************************/	
+	.first_section{
+		width : 100%;
+		min-height : auto;
+		/* min-height : 100vh; */
+	    position : relative;
+		background-image : radial-gradient(#0c253f,#090f21,#0d0a0b);
+		padding : 4rem 4rem 4rem 4rem;
+clip-path: polygon(
+  0% 0%,
+  100% 0%,
+  100% 95%,
+  50% 100%, 
+  0% 95%
+);
+
+	}
+	
+	.first_section_content{
+		width : 100%;
+	}
+	
+	
+	.left_bg{
+		width : 100%;
+	}
+	
+	.first_section_heading{
+		font-weight : 700;
+		font-size : 3.25rem;
+		font-family : calibre,helvetica,arial,sans-serif;
+	    transform : scaleY(0);
+		transform-origin : bottom;
+        /* opacity : 0;		 */
+		color : #ffffff;
+		position : relative;
+		padding : 7.5px 0 0 12.5px;
+	}
+	
+	.first_section_heading::before{
+		position : absolute;
+		content : "";
+		width : 100px;
+		height : 100px;
+		border-top : solid 3px #ffffff;
+		border-left : solid 3px #ffffff;
+		top : 0;
+		left : 0;
+	}
+	
+	
+	.second_section_text{
+		padding-top : 75px;
+		color : #ffffff;
+		font-size : 1.5rem;
+	}	
+	
+	
+
+
+/******************************FIRST SECTION ANIMATION******************************/	
+
+    @keyframes first_section_heading_animation{
+		from{
+			transform : scaleY(0);
+		}
+		to{
+			transform : scaleY(1);
+		}
+	}
+	
+	.animate_first_section_heading{
+	   animation-name : first_section_heading_animation;
+	   animation-duration : 1.5s;
+	   animation-timing-function : linear;
+	   animation-fill-mode : forwards;
+	}
+	
+/******************************SECOND SECTION******************************/	
+    .second_section{
+	    width : 100%;
+	    min-height : auto;
+	    padding : 4rem 1rem 2rem 1rem;
+	    background : #ffffff;
+	}	
+	
+    .third_section_wrapper{
+    	
+    	width : 1000px;
+    	overflow : hidden;
+        color : #ffffff;	
+    	height : 300px;
+    	
+    }	
+	
+	
+	.third_section_flex{
+	    display : flex;
+        flex-direction : row;
+		height : 100%;
+       transition: transform 0.5s ease-in-out;
+       
+       /* Start showing the REAL Slide 1 (index 1 in the wrapper array) */
+       transform: translateX(-1000px);		
+	}
+	
+	.first_images_set{
+		margin-left : 50px;
+	}
+	
+    .third_section_flex>div{
+      /* Ensures each slide takes up exactly the container height */
+      flex-shrink: 0;
+      height: 300px; /* Must match .slideshow-container height */
+      width: 1000px;
+      padding : 50px 0 0 30px;
+    }	
+	
+	.logo_img{
+		width : 18%;
+        height : auto;
+        margin : 0 2.5% 0 2.5%;		
+	}	
+	
+	.metric_item{
+		font-size : 1.4rem;
+		color :rgb(24 49 83);
+		text-align : center;
+        padding : 15px 0 0 0;		
+	}
+	 
+	.engagement_areas_heading{
+	    color : rgb(24 49 83);
+        font-size : 2.5rem;
+        font-weight : 600;
+        padding : 100px 0 25px 0;		
+	}
+
+
+    .engagement_areas_flex{
+	    width : 100%;
+	    /* height : 600px; */
+	    display : flex;
+	    flex-direction : row;
+	    gap : 50px;
+		margin : 25px 0 50px 0;
+	}
+	 
+	 
+	.engagement_areas_flex>div{
+	    flex : 1;
+	    background-color :#f5f5f5;
+	    box-shadow : 0 5px 5px 0 rgba(18,63,82,.035),0 0 0 1px #b0b5c133;
+	    border-radius : 12px;
+	    padding : 15px;
+	    color : rgb(24 49 83);
+	}
+	 
+	.flex_item_heading{
+        font-weight : 600;
+		font-size : 1.5rem;
+		padding : 0 0 15px 0;
+	}	
+
+    .flex_item_text, .focus_list>li{
+        font-size : 1.12rem;
+	}	
+	
+    .flex_item_text{
+        text-align : left;
+	}	
+
+    .focus_list_heading{
+        font-weight : 600;
+		font-size : 1.25rem;
+		padding : 0 0 7.5px 0;		
+	}    
+
+    .focus_list{
+	    padding-left : 30px;	
+	}	
+	
+	
+/******************************THIRD SECTION******************************/	
+    .third_section{
+	    width : 100%;
+	    min-height : auto;
+	    padding : 2rem 0 2rem 0;
+	    background : #f1f2ee;
+	}
+	
+	.second_section_content{
+		width : 100%;
+		min-height : auto;
+	}
+	
+	.engagement_format_heading{
+	    color : rgb(24 49 83);
+        font-size : 2.5rem;
+        font-weight : 600;
+        padding : 25px 0 25px 2.5%;
+        text-align : left;		
+	}	
+	
+	.engagement_format_flex{
+	    width : 95%;
+	    height : 650px;
+	    display : flex;
+	    flex-direction : row;
+	    gap : 0;
+		margin : 25px auto 75px auto;		
+        background-color: #19273B;
+	    border-radius : 25px;
+        		
+	}
+	.engagement_format_flex>div{
+	    flex : 1;
+		height : 100%;
+	    box-shadow : 0 5px 5px 0 rgba(18,63,82,.035),0 0 0 1px #b0b5c133;
+	    color : rgb(24 49 83);		
+		height : 100%;
+		color : #ffffff;
+		padding : 50px 15px 15px 15px;
+		font-size : 1.12rem;
+		position : relative;
+		border-radius : 25px;
+        /* transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);		 */
+		
+	}
+	
+	.egagement_heading{
+        font-weight : 600;
+		font-size : 1.5rem;
+		padding : 0 0 15px 0;
+	}	
+	
+	.engagement_details{
+		text-align : left;
+	}	
+		
+	.key_list{
+		padding-left : 30px;
+	}
+	
+	.stripe_img_1{
+		position : absolute;
+		height : 50px;
+		width : 50px;
+		top : 0;
+		left : 0;
+	}
+	.key_heading{
+        font-weight : 600;
+		font-size : 1.25rem;
+		padding : 0 0 7.5px 0;		
+	}
+	
+	.stripe_img_2{
+		position : absolute;
+		height : 50px;
+		width : 50px;
+		bottom : 0;
+		right : 0;
+		transform : rotate(180deg);
+	}
+	
+	.engagement_link{
+		color : #ffffff;
+		font-size : 1.45rem;
+		font-weight : 600;
+		text-align : right;
+		padding : 0 0 0 0;
+		bottom : 5%;
+		right : 5%;
+		position : absolute;
+		display : inline-block;
+        background-image: linear-gradient(#ffffff, #ffffff);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s ease;
+	}
+	
+	.engagement_link>a{
+		color : #ffffff;
+		position : relative;
+		text-decoration : none;
+	}
+	
+    
+    .engagement_link:hover, .institutional_link:hover{
+      background-size: 100% 2px;
+    }	
+	
+	.final_engagement_section{
+		padding : 0 0 0 2.5%;
+		font-size : 1.25rem;
+	}
+
+    .institutional_engagement_heading{
+		color : rgb(24 49 83);
+		font-size : 1.75rem;
+		font-weight : 600;
+		text-align : left;
+	}
+	
+	.institutional_link{
+		color : #323232;
+		font-weight : 600;
+		font-size : 1.5rem;
+        background-image: linear-gradient(#323232, #323232);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s ease;
+        display : inline-block;	
+        padding : 50px 0 0 0;		
+	}
+	.institutional_link>a{
+		color : #323232;
+		text-decoration : none;
+		font-size : 1.5rem;		
+	}
+	#east_arrow{
+		font-size : 1.75rem;
+	}	
+	
+	
+/*****************************************END************************************/
+}	
