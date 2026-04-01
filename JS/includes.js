@@ -1,6 +1,9 @@
-const basePath = "/CJEVOH/COMPONENTS/";
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", () => {
+  const basePath = window.location.pathname.split('/')[1]
+    ? "/" + window.location.pathname.split('/')[1] + "/COMPONENTS/"
+    : "/COMPONENTS/";
+
   document.querySelectorAll("[data-include]").forEach(el => {
     const file = el.getAttribute("data-include") + ".html";
 
@@ -14,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(err => console.error(err));
   });
+
 });
