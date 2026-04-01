@@ -1,13 +1,17 @@
-const basePath = "/CJEVOH/components/";
-
-async function includeHTML(el, file) {
-  const res = await fetch(basePath + file);
-  el.innerHTML = await res.text();
-}
+const basePath = "/CJEVOH/COMPONENTS/";
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-include]").forEach(el => {
     const file = el.getAttribute("data-include") + ".html";
-    includeHTML(el, file);
+
+    fetch(basePath + file)
+      .then(res => {
+        if (!res.ok) throw new Error("Failed to load " + file);
+        return res.text();
+      })
+      .then(data => {
+        el.innerHTML = data;
+      })
+      .catch(err => console.error(err));
   });
 });
