@@ -82,6 +82,7 @@
     .brand_logo{
 		width : 200px;
 		height : 80px;
+		transform : translateX(-50px);
 	}
 	
 
